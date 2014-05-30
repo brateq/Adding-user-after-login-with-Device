@@ -1,0 +1,6 @@
+<h1>Create new User from manager controller</h1>
+<%= form_for User.new do |f| %>
+  <%= f.email_field :email %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "back", users_path %>
