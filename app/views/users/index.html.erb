@@ -1,4 +1,7 @@
+
 <h1>Listing users after login</h1>
+<h2> Current user: <%= current_user.email %></h2>
+
 <h2><%= link_to "Logout", destroy_user_session_path, :method => :delete %></h2>
 
 <table>
@@ -22,5 +25,4 @@
 
 <br>
 
-<%= link_to 'New User from user controller', new_user_path %><br />
-<%= link_to "New user from manager controller", new_manager_path %>
+<%= link_to 'New User when you log-on', new_user_path %><br />
