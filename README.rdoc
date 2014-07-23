@@ -1,3 +1,13 @@
-Trying to solve problem with Device. 
-I can't add user after login to application.
-I appreciate any help.
+== Adding user after login with Devise
+
+Devise with default configuration don't allow to adding a new user after you are log in. 
+
+So, you need to make a new file in app/controllers
+    registrations_controller.rb
+    
+and past content of the same file from this repository.
+Controller checks if user is log in and behaves as appropriate.
+
+Addictionaly, you can add or copy a new notice (:adding_user) to config/locales/devise.en.yml
+
+Thx SSR from Stackoverflow for guides!
